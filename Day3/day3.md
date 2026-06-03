@@ -1,7 +1,12 @@
 # Day 3 – Role-Based Prompting
 
 ## What is Role-Based Prompting?
-[Your explanation]
+Role-Based Prompting is a technique where you tell an AI what role or profession it should act as before answering your question.
+Instead of asking:
+"How do I improve my app?"
+You ask:
+"You are a senior product manager. How do I improve my app?"
+The AI then responds from the perspective of that role, using knowledge, priorities, and terminology that an expert in that field would typically use.
 
 ## Prompt Without Role
 
