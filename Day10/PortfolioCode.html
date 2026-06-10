@@ -1,0 +1,393 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shreyansh Pandey | Portfolio</title>
+
+<meta name="description" content="Portfolio of Shreyansh Pandey - Aspiring Software Engineer, Frontend Developer, and AI/ML Enthusiast.">
+<meta name="keywords" content="Shreyansh Pandey, Software Engineer, Frontend Developer, AI, Machine Learning, Portfolio">
+<meta name="author" content="Shreyansh Pandey">
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+body{
+font-family:'Inter',sans-serif;
+scroll-behavior:smooth;
+}
+.glass{
+backdrop-filter:blur(12px);
+}
+.skill-bar{
+width:0;
+transition:width 1.5s ease;
+}
+.active-link{
+color:#14b8a6 !important;
+}
+.fade-up{
+opacity:0;
+transform:translateY(40px);
+transition:.8s ease;
+}
+.fade-up.show{
+opacity:1;
+transform:translateY(0);
+}
+.gradient{
+background:linear-gradient(135deg,#7c3aed,#14b8a6);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+</style>
+</head>
+
+<body class="bg-slate-950 text-white transition-colors duration-300">
+
+<!-- NAVBAR -->
+<nav class="fixed top-0 left-0 w-full z-50 bg-slate-950/80 backdrop-blur border-b border-slate-800">
+<div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+<h1 class="font-bold text-xl gradient">SP</h1>
+
+<div class="hidden md:flex gap-8">
+<a href="#home" class="nav-link">Home</a>
+<a href="#about" class="nav-link">About</a>
+<a href="#skills" class="nav-link">Skills</a>
+<a href="#projects" class="nav-link">Projects</a>
+<a href="#achievements" class="nav-link">Achievements</a>
+<a href="#contact" class="nav-link">Contact</a>
+</div>
+
+<div class="flex items-center gap-4">
+<button id="themeToggle" class="px-3 py-2 rounded-lg bg-slate-800">
+🌙
+</button>
+</div>
+</div>
+</nav>
+
+<!-- HERO -->
+<section id="home" class="min-h-screen flex items-center">
+<div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+
+<div class="fade-up">
+<h2 class="text-5xl md:text-7xl font-extrabold leading-tight">
+Shreyansh <span class="gradient">Pandey</span>
+</h2>
+
+<h3 class="text-2xl mt-6 text-teal-400">
+<span id="typing"></span>
+</h3>
+
+<p class="mt-6 text-slate-300 max-w-xl">
+Electronics and Communication Engineering undergraduate with strong proficiency in Python, C++, Machine Learning, and modern web technologies.
+</p>
+
+<div class="flex gap-4 mt-8">
+<a href="https://github.com/Shreyansh1258" target="_blank" class="px-5 py-3 bg-teal-500 rounded-lg font-semibold hover:scale-105 transition">
+GitHub
+</a>
+
+<a href="https://www.linkedin.com/in/shreyansh-pandey-1094b5244" target="_blank" class="px-5 py-3 bg-violet-600 rounded-lg font-semibold hover:scale-105 transition">
+LinkedIn
+</a>
+</div>
+</div>
+
+<div class="flex justify-center fade-up">
+<img src="Screenshot 2026-06-10 115017.png"
+alt="Profile Photo"
+class="w-80 h-80 object-cover rounded-full border-4 border-teal-400 shadow-2xl">
+</div>
+
+</div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="py-24">
+<div class="max-w-6xl mx-auto px-6 fade-up">
+<h2 class="text-4xl font-bold mb-8">About Me</h2>
+
+<p class="text-lg text-slate-300 leading-relaxed">
+I am an aspiring Software Engineer, Frontend Developer, and AI/ML Enthusiast passionate about creating impactful digital solutions.
+My interests span machine learning, web development, data analysis, and intelligent systems. I enjoy building scalable applications,
+solving real-world problems, and continuously expanding my technical expertise.
+</p>
+</div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="py-24 bg-slate-900">
+<div class="max-w-6xl mx-auto px-6 fade-up">
+
+<h2 class="text-4xl font-bold mb-10">Skills</h2>
+
+<div class="grid md:grid-cols-2 gap-10">
+
+<div>
+<h3 class="font-semibold mb-4">Technical Skills</h3>
+
+<div class="space-y-5">
+
+<div>
+<div class="flex justify-between">
+<span>Python</span>
+<span>90%</span>
+</div>
+<div class="bg-slate-700 h-3 rounded">
+<div class="skill-bar bg-teal-400 h-3 rounded" data-width="90%"></div>
+</div>
+</div>
+
+<div>
+<div class="flex justify-between">
+<span>Machine Learning</span>
+<span>85%</span>
+</div>
+<div class="bg-slate-700 h-3 rounded">
+<div class="skill-bar bg-violet-500 h-3 rounded" data-width="85%"></div>
+</div>
+</div>
+
+<div>
+<div class="flex justify-between">
+<span>SQL</span>
+<span>80%</span>
+</div>
+<div class="bg-slate-700 h-3 rounded">
+<div class="skill-bar bg-cyan-400 h-3 rounded" data-width="80%"></div>
+</div>
+</div>
+
+<div>
+<div class="flex justify-between">
+<span>Frontend Development</span>
+<span>88%</span>
+</div>
+<div class="bg-slate-700 h-3 rounded">
+<div class="skill-bar bg-emerald-400 h-3 rounded" data-width="88%"></div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div>
+<h3 class="font-semibold mb-4">Tools & Soft Skills</h3>
+
+<div class="flex flex-wrap gap-3">
+<span class="px-4 py-2 bg-slate-800 rounded-full">VS Code</span>
+<span class="px-4 py-2 bg-slate-800 rounded-full">Jupyter</span>
+<span class="px-4 py-2 bg-slate-800 rounded-full">Power BI</span>
+<span class="px-4 py-2 bg-slate-800 rounded-full">Git</span>
+<span class="px-4 py-2 bg-slate-800 rounded-full">Leadership</span>
+<span class="px-4 py-2 bg-slate-800 rounded-full">Communication</span>
+<span class="px-4 py-2 bg-slate-800 rounded-full">Teamwork</span>
+<span class="px-4 py-2 bg-slate-800 rounded-full">Problem Solving</span>
+</div>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="py-24">
+<div class="max-w-6xl mx-auto px-6 fade-up">
+
+<h2 class="text-4xl font-bold mb-10">Projects</h2>
+
+<div class="grid md:grid-cols-2 gap-8">
+
+<div class="bg-slate-900 p-6 rounded-2xl border border-slate-800">
+<h3 class="text-2xl font-bold mb-3">AI Resume Analyzer</h3>
+
+<p class="text-slate-300 mb-4">
+Developed an AI-powered resume analysis tool that evaluates resumes and provides ATS-based recommendations for improving employability and screening performance.
+</p>
+
+<div class="flex flex-wrap gap-2">
+<span class="bg-teal-500 px-3 py-1 rounded-full">Python</span>
+<span class="bg-violet-500 px-3 py-1 rounded-full">NLP</span>
+<span class="bg-cyan-500 px-3 py-1 rounded-full">Machine Learning</span>
+<span class="bg-emerald-500 px-3 py-1 rounded-full">spaCy</span>
+<span class="bg-orange-500 px-3 py-1 rounded-full">Scikit-learn</span>
+</div>
+</div>
+
+<div class="bg-slate-900 p-6 rounded-2xl border border-slate-800">
+<h3 class="text-2xl font-bold mb-3">Movie Recommendation System</h3>
+
+<p class="text-slate-300 mb-4">
+Engineered a content-based movie recommendation engine using TF-IDF vectorization and cosine similarity to deliver personalized movie suggestions.
+</p>
+
+<div class="flex flex-wrap gap-2">
+<span class="bg-teal-500 px-3 py-1 rounded-full">Python</span>
+<span class="bg-violet-500 px-3 py-1 rounded-full">TF-IDF</span>
+<span class="bg-cyan-500 px-3 py-1 rounded-full">Scikit-learn</span>
+<span class="bg-emerald-500 px-3 py-1 rounded-full">Streamlit</span>
+<span class="bg-orange-500 px-3 py-1 rounded-full">Cosine Similarity</span>
+</div>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- ACHIEVEMENTS -->
+<section id="achievements" class="py-24 bg-slate-900">
+<div class="max-w-6xl mx-auto px-6 fade-up">
+
+<h2 class="text-4xl font-bold mb-10">Achievements & Certifications</h2>
+
+<div class="space-y-4 text-lg">
+<div>🏆 Responsive Web Design — FreeCodeCamp</div>
+<div>🏆 Data Analysis with Python — FreeCodeCamp</div>
+<div>🏆 Python for Data Science and Machine Learning — IIT Roorkee (2024)</div>
+</div>
+
+</div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="py-24">
+<div class="max-w-5xl mx-auto px-6 fade-up">
+
+<h2 class="text-4xl font-bold mb-10">Contact</h2>
+
+<div class="grid md:grid-cols-2 gap-10">
+
+<div>
+<p class="mb-4">📍 Uttar Pradesh, India</p>
+<p class="mb-4">📧 pandey.shreyansh321@gmail.com</p>
+
+<div class="flex gap-4 mt-6">
+<a href="https://github.com/Shreyansh1258" target="_blank">GitHub</a>
+<a href="https://www.linkedin.com/in/shreyansh-pandey-1094b5244" target="_blank">LinkedIn</a>
+</div>
+</div>
+
+<form class="space-y-4">
+<input type="text" placeholder="Your Name"
+class="w-full p-3 rounded bg-slate-800">
+
+<input type="email" placeholder="Email"
+class="w-full p-3 rounded bg-slate-800">
+
+<textarea rows="5"
+placeholder="Message"
+class="w-full p-3 rounded bg-slate-800"></textarea>
+
+<button
+type="submit"
+class="bg-teal-500 px-6 py-3 rounded-lg font-semibold">
+Send Message
+</button>
+</form>
+
+</div>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer class="py-8 border-t border-slate-800 text-center">
+<p>© 2026 Shreyansh Pandey. All Rights Reserved.</p>
+</footer>
+
+<script>
+const text=[
+"Aspiring Software Engineer",
+"Frontend Developer",
+"AI/ML Enthusiast"
+];
+
+let i=0;
+let j=0;
+let current="";
+let isDeleting=false;
+
+function type(){
+current=text[i];
+
+if(!isDeleting){
+document.getElementById("typing").textContent=
+current.substring(0,j++);
+if(j>current.length){
+isDeleting=true;
+setTimeout(type,1200);
+return;
+}
+}else{
+document.getElementById("typing").textContent=
+current.substring(0,j--);
+if(j===0){
+isDeleting=false;
+i=(i+1)%text.length;
+}
+}
+setTimeout(type,isDeleting?50:100);
+}
+type();
+
+document.querySelectorAll(".skill-bar").forEach(bar=>{
+setTimeout(()=>{
+bar.style.width=bar.dataset.width;
+},600);
+});
+
+const observer=new IntersectionObserver(entries=>{
+entries.forEach(entry=>{
+if(entry.isIntersecting){
+entry.target.classList.add("show");
+}
+});
+});
+
+document.querySelectorAll(".fade-up").forEach(el=>{
+observer.observe(el);
+});
+
+const sections=document.querySelectorAll("section");
+const navLinks=document.querySelectorAll(".nav-link");
+
+window.addEventListener("scroll",()=>{
+let current="";
+sections.forEach(section=>{
+const top=section.offsetTop-150;
+if(scrollY>=top){
+current=section.getAttribute("id");
+}
+});
+
+navLinks.forEach(link=>{
+link.classList.remove("active-link");
+if(link.getAttribute("href").includes(current)){
+link.classList.add("active-link");
+}
+});
+});
+
+const toggle=document.getElementById("themeToggle");
+
+toggle.addEventListener("click",()=>{
+
+document.body.classList.toggle("bg-white");
+document.body.classList.toggle("text-slate-900");
+
+document.body.classList.toggle("bg-slate-950");
+document.body.classList.toggle("text-white");
+
+toggle.textContent=
+toggle.textContent==="🌙" ? "☀️" : "🌙";
+});
+</script>
+
+</body>
+</html>
+```
