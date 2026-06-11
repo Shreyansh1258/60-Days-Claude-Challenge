@@ -14,7 +14,7 @@ collaborate within a team to craft and deploy software solutions aimed at addres
 challenges within Financial Research and Data Analysis.
 
 ## ATS Analysis
-- ATS Match Score: 52%
+- ATS Match Score: 72%
 - Missing Keywords:
   React.js — added to skills as "learning" (honest framing)
 Node.js — added similarly
